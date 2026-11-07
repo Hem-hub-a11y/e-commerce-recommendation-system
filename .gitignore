@@ -1,22 +1,42 @@
 # Python
 __pycache__/
 *.py[cod]
+*$py.class
+*.so
 
 # Virtual environments
 venv/
 .venv/
+env/
+ENV/
 
-# Jupyter
+# Data files (never commit datasets)
+data/*.xlsx
+data/*.csv
+data/*.parquet
+data/*.gz
+data/*.zip
+!data/README.md
+
+# Model artifacts and experimental results
+models/*.pkl
+models/*.joblib
+models/*.npz
+results/*.png
+results/*.csv
+results/*.json
+
+# Jupyter Notebook checkpoints
 .ipynb_checkpoints/
+*-checkpoint.ipynb
 
-# Environment variables
+# Environment variables & secrets
 .env
 .env.*
 
-# IDE
+# IDE and OS files
 .vscode/
-
-# System files
+.idea/
 .DS_Store
 Thumbs.db
 
